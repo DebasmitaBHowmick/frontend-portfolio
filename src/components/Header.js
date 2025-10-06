@@ -23,7 +23,7 @@ useEffect(()=> {
   }
 }, [darkMode])
 
-const [hidden, setHidden] = useState(false);
+const [hidden, setHidden] = useState(true);
   return (
   <header>
 <nav className="bg-white border-gray-200 dark:bg-gray-900">

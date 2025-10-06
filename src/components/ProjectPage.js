@@ -13,7 +13,7 @@ UseTitle("Projects")
     
     {projects.map((p, index)=> 
 
-    <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition">
+    <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-200">
             <h3 className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition dark:text-yellow-200 font-semibold"> {p.title}</h3>
             <p className="text-gray-600 dark:text-gray-300 mb-4" >Overview <br/>{p.description}</p>
             <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Tech: {p.tech}</p>
