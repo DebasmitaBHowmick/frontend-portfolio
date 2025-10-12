@@ -14,6 +14,13 @@ export const projects = [
     github: "https://github.com/DebasmitaBHowmick/CodeCamp"
     },
     {
+     title: "MyChat-Bot",
+    description: "MyChat-Bot is a web app that lets users upload or drag-and-drop images to generate concise captions or have real time conversations using Google Gemini AI. It features real-time image previews and smooth user interactions. The project demonstrates practical skills in state management, asynchronous API integration, and AI-powered web development.",
+    tech: "React, Tailwind, Gemini API ",
+    live: "https://mychatbot256.netlify.app/",
+    github: "https://github.com/DebasmitaBHowmick/myChatBot"
+    },
+    {
     title: "Weather-Here",
     description: "An responsive weather application built with React, showing real-time forecasts, air quality, and location-based weather updates using the WeatherAPI.",
     tech: "React, React-Query, Tailwind",
