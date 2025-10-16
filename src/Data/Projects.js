@@ -7,14 +7,6 @@ export const projects = [
      github: "https://github.com/DebasmitaBHowmick/Zaschboard-Management-Board"
             
     },
-
-    {
-    title: "CodeCamp",
-    description: "E-Commerce is a modern, fully responsive shopping web app built with React and Tailwind CSS for a sleek user interface. Backed by JSON Server and JWT authentication, it ensures secure transactions, while React-Redux powers smooth, real-time state management for a seamless shopping experience from browsing to checkout.",
-    tech: "React, Redux, Tailwind,JWT token",
-    live: "https://codecamp-ebook.netlify.app/",
-    github: "https://github.com/DebasmitaBHowmick/CodeCamp"
-    },
     {
         title: "E-Cube",
         description: "E-Cube is a sleek, fully responsive web app for effortless show booking. Enjoy one-click reservations powered by Redux state management, secure Firebase authentication.Track every booking in real time and experience a smooth, mobile-friendly interface from start to finish.",
