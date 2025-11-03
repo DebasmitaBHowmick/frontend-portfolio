@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# 🌐 Debasmita Bhowmick — React Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, fully responsive portfolio website built with **React + TypeScript + Tailwind CSS**, showcasing my front-end projects, skills, and contact information.  
 
-## Available Scripts
+This project highlights my experience with React, routing, TypeScript conversions, and custom UI design principles.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🚀 **Features**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+✅ Built with **React + TypeScript** for type safety and maintainability  
+✅ Styled with **Tailwind CSS** for fast, responsive UI  
+✅ **Dark Mode** toggle with persistent theme preference  
+✅ Smooth **React Router Navigation**  
+✅ Interactive **Contact Form** (with simulated submission + toast notifications)  
+✅ Reusable Components (Hero, Projects, Contact, Footer, etc.)  
+✅ Organized **Data-driven Project Listing** using TypeScript interfaces  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ **Tech Stack**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React, TypeScript, Tailwind CSS  
+- **Routing:** React Router DOM  
+- **UI Feedback:** React Toastify  
+- **Build Tool:** Vite / Create React App (depending on your setup)  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 **Project Structure**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🧠 **Learning Highlights**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Migrated React JS project to **TypeScript** for type safety  
+- Used **interfaces** to structure data and props  
+- Implemented **dark mode persistence** using `localStorage`  
+- Managed navigation with **React Router**  
+- Designed responsive layouts using **Tailwind’s utility-first approach**  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ **Setup Instructions**
+src/
+├── assets/ # Images and icons
+├── components/ # All UI components (HeroPage, Header, Footer, etc.)
+├── Data/ # Data files (Projects.ts)
+├── hooks/ # Custom React hooks (e.g. UseTitle)
+├── App.tsx # Main app component
+├── main.tsx # Entry point
+├── index.css # Tailwind base styles
+├── declarations.d.ts # TypeScript declarations for images
+└── tsconfig.json # TypeScript configuration
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Folder to Focus On
+src/components → Main UI components
+src/Data/Projects.ts → Project details stored as TypeScript objects
+src/hooks/UseTitle.ts → Custom hook to dynamically change the page title
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🧑‍💻 Author
+👩‍💻 Debasmita Bhowmick
+Front-End Developer | React • Redux • Tailwind
+🔗 LinkedIn: https://www.linkedin.com/in/debasmita-bhowmick-232941201/
+📧 98debas@gmail.com
