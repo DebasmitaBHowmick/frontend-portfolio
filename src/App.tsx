@@ -11,7 +11,7 @@ function App() {
     <div className="App dark:bg-slate-800">
       <Header/>
       <RouteComponents/>
-      <ToastContainer autoClose={2000} closeOnClick="true"/>
+      <ToastContainer autoClose={2000} closeOnClick={true as boolean}/>
       <Footer/>
     </div>
   );

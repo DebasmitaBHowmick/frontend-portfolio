@@ -1,4 +1,12 @@
-export const projects = [
+ export interface Project {
+    title: string;
+    description: string;
+    tech: string;
+    live: string;
+    github: string;
+ }
+
+export const projects: Project[] = [
     {
      title: "Zaschboard-Management-Board",
     description: "An interactive management board leveraging Redux and a local backend for efficient task and employee management. Integrates AI-generated summarized notes, real-time updates, and smart filtering, providing quick insights and enhancing workflow productivity for seamless team coordination",

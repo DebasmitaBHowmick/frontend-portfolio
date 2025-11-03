@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 
 
-const UseTitle = (title) => {
+const UseTitle = (title:string) => {
 useEffect(()=> {
     document.title = `${title} | Portfolio`
 }, [title])

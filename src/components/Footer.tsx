@@ -14,9 +14,9 @@ const Footer = () => {
        
       </p>
       <p >
-         <Link to="https://www.linkedin.com/in/debasmita-bhowmick-232941201/"
+         <a href="https://www.linkedin.com/in/debasmita-bhowmick-232941201/" target="_blank" rel="noopener noreferrer"
           className=" text-blue-600 dark:text-blue-400 hover:underline" >LinkedIn
-        </Link>
+        </a>
       </p>
     </footer>
   )

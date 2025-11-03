@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import HeroPage from "../components/HeroPage";
 import ProjectPage from "../components/ProjectPage";
 import Contact from "../components/Contact";
-import PageNotFound from './../components/PageNotFound';
+import PageNotFound from '../components/PageNotFound';
 
 const RouteComponents = () => {
   return (

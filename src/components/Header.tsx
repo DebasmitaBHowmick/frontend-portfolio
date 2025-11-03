@@ -11,10 +11,10 @@ const inActiveClass = "block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-10
 
 
 //toggle darkMode
-const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || true);
+const [darkMode, setDarkMode] = useState<boolean>(JSON.parse(localStorage.getItem("darkMode") || "true"));
 
 useEffect(()=> {
-  JSON.stringify(localStorage.setItem("darkMode", darkMode));
+  localStorage.setItem("darkMode", JSON.stringify(darkMode));
 
   if (darkMode) {
     document.documentElement.classList.add('dark')
@@ -23,7 +23,8 @@ useEffect(()=> {
   }
 }, [darkMode])
 
-const [hidden, setHidden] = useState(true);
+const [hidden, setHidden] = useState<boolean>(true);
+
   return (
   <header>
 <nav className="bg-white border-gray-200 dark:bg-gray-900">

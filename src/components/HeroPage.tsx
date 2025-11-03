@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import UseTitle from './../hooks/UseTitle';
+import UseTitle from '../hooks/UseTitle';
 
 const HeroPage = () => {
 UseTitle("Home")

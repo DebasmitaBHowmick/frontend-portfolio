@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom"
-import { projects } from "../Data/Projects"
-import UseTitle from './../hooks/UseTitle';
+import { projects, Project } from "../Data/Projects"
+import UseTitle from '../hooks/UseTitle';
 
 
 const ProjectPage = () => {
-UseTitle("Projects")
+UseTitle("Projects");
+
   return (
     <main>
       <section id="projects" className="py-20 px-6 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">My Work</h2>
       <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
     
-    {projects.map((p, index)=> 
+    {projects.map((p: Project, index:number)=> 
 
     <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-200">
             <h3 className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition dark:text-yellow-200 font-semibold"> {p.title}</h3>

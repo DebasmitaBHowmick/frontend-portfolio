@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import UseTitle from './../hooks/UseTitle';
+import UseTitle from '../hooks/UseTitle';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
@@ -8,10 +8,10 @@ import { toast } from 'react-toastify';
 const Contact = () => {
 UseTitle("Contact");
 
-const [status, setStatus] = useState("");
+const [status, setStatus] = useState<string>("");
 const navigate = useNavigate()
 
- async function handleContact (e) {
+ async function handleContact (e:React.FormEvent<HTMLFormElement>) {
   e.preventDefault();
   setStatus("Sending...")
   setTimeout(()=> { setStatus("Message Sent! ✅ ")},800);
@@ -61,7 +61,7 @@ const navigate = useNavigate()
             <textarea
               required
               name="message"
-              rows="6"
+              rows={6 as number}
               className="px-3 py-3 rounded-lg bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
               placeholder="Tell me about your project..."
             />
@@ -80,7 +80,7 @@ const navigate = useNavigate()
 
         <div className="mt-6 text-sm text-gray-600 dark:text-gray-300">
           Or reach me at 
-          <a href="98debas@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+          <a href="mailto:98debas@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
            98debas@gmail.com 
           </a>
           <a href='https://www.linkedin.com/in/debasmita-bhowmick-232941201/' className='text-blue-600 dark:text-blue-400 hover:underline'> My LinkIdn profile </a>
