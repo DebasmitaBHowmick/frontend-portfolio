@@ -16,6 +16,13 @@ export const projects: Project[] = [
             
     },
     {
+    title: "CodeCamp eCommerce",
+    description: "Designed and implemented a complete e-commerce platform featuring product browsing, cart management, and checkout flow. The frontend is built with React, while the backend (including JWT authentication) was self-developed using JSON Server.",
+    tech: "React, Tailwind, JWT Token, Redux",
+     live: "https://codecamp-ebook.netlify.app/",
+     github: "https://github.com/DebasmitaBHowmick/CodeCamp"
+    },
+    {
         title: "E-Cube",
         description: "E-Cube is a sleek, fully responsive web app for effortless show booking. Enjoy one-click reservations powered by Redux state management, secure Firebase authentication.Track every booking in real time and experience a smooth, mobile-friendly interface from start to finish.",
         tech: "React, Firebase, Redux, Tailwind",
