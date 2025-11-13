@@ -1,3 +1,4 @@
+import {motion} from "framer-motion"
 import { Link } from "react-router-dom"
 import { projects, Project } from "../Data/Projects"
 import UseTitle from '../hooks/UseTitle';
@@ -14,15 +15,20 @@ UseTitle("Projects");
     
     {projects.map((p: Project, index:number)=> 
 
-    <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-200">
-            <h3 className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition dark:text-yellow-200 font-semibold"> {p.title}</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4" >Overview <br/>{p.description}</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Tech: {p.tech}</p>
+    <motion.div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg hover:scale-105 transition-transform duration-200"
+    initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, delay: index * 0.15, ease: "easeOut" }}>
+           
+            <h3 className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow hover:shadow-lg transition dark:text-yellow-200 font-semibold font-poppins"> {p.title}</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 font-poppins" >Overview <br/>{p.description}</p>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 font-poppins">Tech: {p.tech}</p>
             <div className="flex gap-4">
-              <Link to={p.live} className="text-blue-600 dark:text-blue-400 hover:underline" target="_blank">Live Demo</Link>
-              <Link to={p.github} className="text-gray-700 dark:text-gray-200 hover:underline" target="_blank">GitHub</Link>
+              <Link to={p.live} className="text-blue-600 dark:text-blue-400 hover:underline font-poppins" target="_blank">Live Demo</Link>
+              <Link to={p.github} className="text-gray-700 dark:text-gray-200 hover:underline font-poppins" target="_blank">GitHub</Link>
             </div>
-          </div>)}
+          </motion.div>)}
           
       
       </div>
