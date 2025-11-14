@@ -13,7 +13,7 @@ UseTitle("Home")
         <span className="wave">👋</span> Hi,
       </h1>
       <br/>
-        <AnimatedText text = `I'm Debasmita '\n 
+        <AnimatedText text = `I'm Debasmita \n 
         Bhowmick'`/>
       {/* Subtitle */}
       <motion.p
