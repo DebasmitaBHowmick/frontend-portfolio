@@ -9,11 +9,20 @@ UseTitle("Home")
     <main>
       <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-blue-50 to-white dark:from-gray-900 dark:to-gray-800 text-center px-4 transition-colors duration-300">
       
+      <div className="absolute inset-0 z-0 pointer-events-none">
+    <ul className="particles">
+      {Array.from({ length: 20 }).map((_, i) => (
+        <li key={i}></li>
+      ))}
+    </ul>
+  </div>
+
+
       <h1 className="text-4xl md:text-6xl font-bold mb-4 flex items-center justify-center gap-3 dark:text-white font-poppins">
-        <span className="wave">👋</span> Hi,
+        <span className="wave">👋</span> Hey!
       </h1>
       <br/>
-        <AnimatedText text="I am Debasmita Bhowmick"/>
+        <AnimatedText text={`I'm Debasmita Bhowmick`}/>
       {/* Subtitle */}
       <motion.p
         className="mt-4 my-6 text-lg md:text-xl opacity-80 text-center max-w-2xl dark:text-white font-poppins"

@@ -26,7 +26,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({ text }) => {
 
   return (
     <motion.div
-      className="flex flex-wrap text-4xl md:text-6xl font-bold dark:text-white"
+      className="flex flex-wrap text-4xl md:text-3xl font-bold dark:text-white font-poppins"
       variants={container}
       initial="hidden"
       animate="visible"
