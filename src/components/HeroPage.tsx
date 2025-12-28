@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import AnimatedText from "./AnimatedText";
 import UseTitle from '../hooks/UseTitle';
+import Skills from "./Skills";
 
 const HeroPage = () => {
 UseTitle("Home")
@@ -67,6 +68,9 @@ UseTitle("Home")
         }
       `}</style>
     </section>
+    
+    {/* Skills Section */}
+    <Skills />
     </main>
   )
 }

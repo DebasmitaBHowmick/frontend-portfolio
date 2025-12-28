@@ -1,3 +1,5 @@
+
+
  export interface Project {
     title: string;
     description: string;
@@ -12,9 +14,17 @@ export const projects: Project[] = [
     description: "An interactive management board leveraging Redux and a local backend for efficient task and employee management. Integrates AI-generated summarized notes, real-time updates, and smart filtering, providing quick insights and enhancing workflow productivity for seamless team coordination",
     tech: "React, Tailwind, Gemini API, Firebase, Redux",
      live: "https://zaschboard.netlify.app/",
-     github: "https://github.com/DebasmitaBHowmick/Zaschboard-Management-Board"
-            
+     github: "https://github.com/DebasmitaBHowmick/Zaschboard-Management-Board",
+    
     },
+    {
+        title: "MyNote-App",
+        description: "Built an offline-first Notes mobile application using React Native CLI, TypeScript, Redux Toolkit, and SQLite, with automatic background data synchronization to a Node.js backend when network connectivity is restored.",
+        tech: "React-Native, Redux, SQLite, Node js, express js typescript",
+        github: "https://github.com/DebasmitaBHowmick/MyNote-App-Frontend-React-Native",
+        live: ""
+    },
+
     {
     title: "CodeCamp eCommerce",
     description: "Designed and implemented a complete e-commerce platform featuring product browsing, cart management, and checkout flow. The frontend is built with React, while the backend (including JWT authentication) was self-developed using JSON Server.",
@@ -42,13 +52,6 @@ export const projects: Project[] = [
     tech: "React, React-Query, Tailwind",
     live: "https://weatherhere2025.netlify.app/",
     github: "https://github.com/DebasmitaBHowmick/Weather-Here"
-    },
-    {
-    title: "Snapwrite Blog App",
-    description: "A React + Firebase powered blog platform that lets you create, edit, and share posts with ease. Enjoy secure authentication, real-time database support, and a clean, responsive interface for a smooth writing and reading experience—anytime, on any device.",
-    tech: "React, Firebase",
-    live: "https://snapwrite-blog.netlify.app/",
-    github: "https://github.com/DebasmitaBHowmick/Snapwrite"
     },
     {
      title: "NewsYatra",
